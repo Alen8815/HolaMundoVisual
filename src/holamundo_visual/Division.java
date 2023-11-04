@@ -1,16 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
+
 package holamundo_visual;
 
 import java.awt.Color;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author carlo
- */
+
 public class Division extends javax.swing.JFrame {
 
     /**
@@ -160,15 +154,15 @@ public class Division extends javax.swing.JFrame {
         try {
             double num1 = Double.parseDouble(txtNum1.getText());
             double num2 = Double.parseDouble(txtNum2.getText());
-            if (num2 != 0) { // Restricción: El divisor (num2) no puede ser igual a 0
+            if (num2 != 0) { 
                double division = num1 / num2;
-                String resultado;
-                resultado = Double.toString(division);
-              lblResultado.setText("elresultado es:"+ resultado);
+              lblResultado.setText("elresultado es:"+ division);
               lblResultado.setForeground(Color.BLACK);
+              lblResultado.setBackground(Color.WHITE);
             } else {
               txtNum2.setForeground(Color.red);
               lblResultado.setForeground(Color.BLACK);
+              lblResultado.setBackground(Color.WHITE);
               lblResultado.setText("no se puede dividir entre 0");
             }
         } catch (NumberFormatException e) {

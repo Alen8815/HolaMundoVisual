@@ -4,10 +4,7 @@
  */
 package holamundo_visual;
 
-/**
- *
- * @author 59399
- */
+
 public class HolaMundo_Visual {
 
     /**

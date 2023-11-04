@@ -6,10 +6,7 @@ package holamundo_visual;
 
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author carlo
- */
+
 public class Resta extends javax.swing.JFrame {
 
     /**
