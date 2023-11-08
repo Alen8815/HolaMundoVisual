@@ -4,8 +4,6 @@
  */
 package holamundo_visual;
 
-import java.awt.Desktop;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.ImageIcon;
@@ -96,7 +94,7 @@ public class Banderas extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnVizualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVizualizarActionPerformed
-                  int random = (int)(Math.random() * 6);
+                  int random = (int)(Math.random() * 101);
     lblRand.setText("" + random);
     int op = random % 2;
     
@@ -118,7 +116,7 @@ public class Banderas extends javax.swing.JFrame {
     });
     
     // Inicia el temporizador
-    timer.setRepeats(false);
+    timer.setRepeats(false);    
     timer.start();
               
     }//GEN-LAST:event_btnVizualizarActionPerformed
