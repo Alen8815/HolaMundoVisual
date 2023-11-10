@@ -114,8 +114,7 @@ public class Colores extends javax.swing.JFrame {
             txtPalabra.setBackground(new Color(139, 69, 19));
             break;
         default:
-            // Puedes manejar un caso por defecto si la letra no coincide con ninguna de las opciones.
-            // Por ejemplo, puedes restablecer el fondo a su valor predeterminado.
+
             txtPalabra.setBackground(null);
             break;
     }
@@ -126,18 +125,23 @@ public class Colores extends javax.swing.JFrame {
     if (!palabra.isEmpty()) {
         char op = palabra.charAt(0);
         switch (Character.toLowerCase(op)) {
+               case'A':
             case 'a':
                 txtPalabra.setBackground(Color.GREEN);
                 break;
+                   case'E':
             case 'e':
                 txtPalabra.setBackground(Color.ORANGE);
                 break;
+                   case'I':
             case 'i':
                 txtPalabra.setBackground(Color.BLUE);
                 break;
+               case'O':
             case 'o':
                 txtPalabra.setBackground(Color.MAGENTA);
                 break;
+            case'U':
             case 'u':
                 txtPalabra.setBackground(new Color(139, 69, 19));
                 break;
@@ -146,7 +150,7 @@ public class Colores extends javax.swing.JFrame {
                 break;
         }
     } else {
-        txtPalabra.setBackground(null); // Restablece el color si no hay texto.
+        txtPalabra.setBackground(null); 
     }
     }//GEN-LAST:event_txtPalabraCaretUpdate
 

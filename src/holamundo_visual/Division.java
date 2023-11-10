@@ -35,13 +35,12 @@ public class Division extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBackground(new java.awt.Color(204, 255, 204));
         jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
         jPanel2.setForeground(new java.awt.Color(0, 0, 0));
 
         lblTitulo.setBackground(new java.awt.Color(255, 255, 255));
         lblTitulo.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(0, 153, 0));
+        lblTitulo.setForeground(new java.awt.Color(0, 0, 0));
         lblTitulo.setText("División");
         lblTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
@@ -50,7 +49,7 @@ public class Division extends javax.swing.JFrame {
         lblNum2.setText("Numero 2:");
 
         lblNum1.setFont(new java.awt.Font("Segoe UI Emoji", 1, 12)); // NOI18N
-        lblNum1.setForeground(new java.awt.Color(51, 0, 0));
+        lblNum1.setForeground(new java.awt.Color(0, 0, 0));
         lblNum1.setText("Numero 1:");
 
         txtNum2.addActionListener(new java.awt.event.ActionListener() {

@@ -41,22 +41,22 @@ public class Suma extends javax.swing.JFrame {
 
         lblTitulo.setBackground(new java.awt.Color(204, 255, 255));
         lblTitulo.setFont(new java.awt.Font("Yu Gothic Medium", 1, 18)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(102, 0, 102));
+        lblTitulo.setForeground(new java.awt.Color(0, 0, 0));
         lblTitulo.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        lblTitulo.setText("SUMA DE DOS NÃšMEROS");
+        lblTitulo.setText("SUMA DE DOS NÚMEROS");
         lblTitulo.setBorder(javax.swing.BorderFactory.createEtchedBorder(new java.awt.Color(204, 0, 153), new java.awt.Color(204, 0, 153)));
         lblTitulo.setFocusable(false);
 
-        lblnumero1.setBackground(new java.awt.Color(255, 204, 255));
-        lblnumero1.setText("Ingrese el primer nÃºmero:");
+        lblnumero1.setBackground(new java.awt.Color(0, 0, 0));
+        lblnumero1.setText("Ingrese el primer número:");
         lblnumero1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lblnumero1ActionPerformed(evt);
             }
         });
 
-        lblnumero2.setBackground(new java.awt.Color(255, 204, 255));
-        lblnumero2.setText("Ingrese el segundo nÃºmero:");
+        lblnumero2.setBackground(new java.awt.Color(0, 0, 0));
+        lblnumero2.setText("Ingrese el segundo número:");
         lblnumero2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 lblnumero2ActionPerformed(evt);

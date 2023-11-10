@@ -53,8 +53,8 @@ public class Resta extends javax.swing.JFrame {
 
         lblTitulo.setBackground(new java.awt.Color(255, 255, 255));
         lblTitulo.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(0, 153, 0));
-        lblTitulo.setText("Resta de dos nÃºmeros");
+        lblTitulo.setForeground(new java.awt.Color(0, 0, 0));
+        lblTitulo.setText("Resta de dos números");
         lblTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblNum2.setFont(new java.awt.Font("Segoe UI Emoji", 1, 12)); // NOI18N
