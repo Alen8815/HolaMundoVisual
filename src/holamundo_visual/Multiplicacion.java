@@ -35,15 +35,12 @@ public class Multiplicacion extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(null);
 
         lblTitulo.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitulo.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(0, 153, 0));
+        lblTitulo.setFont(new java.awt.Font("Segoe UI Light", 2, 14)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(102, 102, 255));
         lblTitulo.setText("Multiplicación");
-        lblTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         lblNum2.setFont(new java.awt.Font("Segoe UI Emoji", 1, 12)); // NOI18N
         lblNum2.setForeground(new java.awt.Color(51, 0, 0));
@@ -59,7 +56,8 @@ public class Multiplicacion extends javax.swing.JFrame {
             }
         });
 
-        btnMultiplicar.setBackground(new java.awt.Color(0, 153, 102));
+        btnMultiplicar.setBackground(new java.awt.Color(255, 0, 204));
+        btnMultiplicar.setFont(new java.awt.Font("Segoe UI Historic", 3, 12)); // NOI18N
         btnMultiplicar.setForeground(new java.awt.Color(255, 255, 255));
         btnMultiplicar.setText("Multiplicar");
         btnMultiplicar.addActionListener(new java.awt.event.ActionListener() {
@@ -73,23 +71,22 @@ public class Multiplicacion extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGap(15, 15, 15)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNum1)
+                    .addComponent(lblNum2))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                    .addComponent(txtNum2)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblNum1)
-                            .addComponent(lblNum2))
-                        .addGap(32, 32, 32)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
-                            .addComponent(txtNum2)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addComponent(btnMultiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
-                        .addComponent(lblTitulo)))
-                .addContainerGap(58, Short.MAX_VALUE))
+                        .addGap(8, 8, 8)
+                        .addComponent(btnMultiplicar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(62, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblTitulo)
+                .addGap(113, 113, 113))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -133,12 +130,12 @@ public class Multiplicacion extends javax.swing.JFrame {
             double num2 = Double.parseDouble(txtNum2.getText());
             if (num1 >= 0 && num2 >= 0) { // Restricción: Ambos números deben ser no negativos
                 double product = num1 * num2;
-                JOptionPane.showMessageDialog(rootPane, "El producto de los dos números es: " + product);
+                JOptionPane.showMessageDialog(rootPane, "Su respuesta es: " + product);
             } else {
-                JOptionPane.showMessageDialog(rootPane, "Ambos números deben ser no negativos.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(rootPane, "No deben ser numeros negativos.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(rootPane, "Por favor, ingrese números válidos en ambos campos.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "INgrese los valores correctos.", "Error", JOptionPane.ERROR_MESSAGE);
         }
         txtNum1.setText("");
         txtNum2.setText("");

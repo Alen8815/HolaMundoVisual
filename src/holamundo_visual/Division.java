@@ -35,21 +35,18 @@ public class Division extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel2.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel2.setBackground(null);
 
         lblTitulo.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitulo.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(0, 0, 0));
-        lblTitulo.setText("División");
-        lblTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        lblTitulo.setFont(new java.awt.Font("Segoe UI Semibold", 3, 18)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(102, 255, 51));
+        lblTitulo.setText("DivisiÃ³n");
 
-        lblNum2.setFont(new java.awt.Font("Segoe UI Emoji", 1, 12)); // NOI18N
-        lblNum2.setForeground(new java.awt.Color(0, 0, 0));
+        lblNum2.setFont(new java.awt.Font("Sitka Text", 3, 12)); // NOI18N
         lblNum2.setText("Numero 2:");
 
-        lblNum1.setFont(new java.awt.Font("Segoe UI Emoji", 1, 12)); // NOI18N
-        lblNum1.setForeground(new java.awt.Color(0, 0, 0));
+        lblNum1.setFont(new java.awt.Font("Sitka Text", 3, 12)); // NOI18N
+        lblNum1.setForeground(new java.awt.Color(51, 0, 0));
         lblNum1.setText("Numero 1:");
 
         txtNum2.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +61,8 @@ public class Division extends javax.swing.JFrame {
             }
         });
 
-        btndividir.setBackground(new java.awt.Color(0, 153, 102));
+        btndividir.setBackground(new java.awt.Color(51, 0, 255));
+        btndividir.setFont(new java.awt.Font("Segoe UI Light", 3, 12)); // NOI18N
         btndividir.setForeground(new java.awt.Color(255, 255, 255));
         btndividir.setText("Dividir");
         btndividir.addActionListener(new java.awt.event.ActionListener() {
@@ -77,35 +75,35 @@ public class Division extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 110, Short.MAX_VALUE)
-                .addComponent(lblTitulo)
-                .addGap(110, 110, 110))
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(96, 96, 96)
-                        .addComponent(btndividir, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(lblNum1)
-                            .addComponent(lblNum2))
-                        .addGap(32, 32, 32)
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
-                            .addComponent(txtNum2))))
+                .addGap(15, 15, 15)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(lblNum1)
+                    .addComponent(lblNum2))
+                .addGap(32, 32, 32)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
+                    .addComponent(txtNum2))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(lblResultado, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addContainerGap(113, Short.MAX_VALUE)
+                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(btndividir, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(88, 88, 88))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                        .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(105, 105, 105))))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(7, 7, 7)
+                .addComponent(lblTitulo, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblNum1)
                     .addComponent(txtNum1, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -155,17 +153,17 @@ public class Division extends javax.swing.JFrame {
             double num2 = Double.parseDouble(txtNum2.getText());
             if (num2 != 0) { 
                double division = num1 / num2;
-              lblResultado.setText("elresultado es:"+ division);
+              lblResultado.setText("La division es:"+ division);
               lblResultado.setForeground(Color.BLACK);
               lblResultado.setBackground(Color.WHITE);
             } else {
               txtNum2.setForeground(Color.red);
               lblResultado.setForeground(Color.BLACK);
               lblResultado.setBackground(Color.WHITE);
-              lblResultado.setText("no se puede dividir entre 0");
+              lblResultado.setText("Es imposible realizar la division con 0");
             }
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(rootPane, "Por favor, ingrese numeros validos en ambos campos.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "Ingrese los valores correctos.", "Error", JOptionPane.ERROR_MESSAGE);
         }
 
     }//GEN-LAST:event_btndividirActionPerformed

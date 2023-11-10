@@ -47,21 +47,18 @@ public class Resta extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jPanel1.setBackground(new java.awt.Color(204, 255, 204));
-        jPanel1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel1.setForeground(new java.awt.Color(0, 0, 0));
+        jPanel1.setBackground(null);
 
         lblTitulo.setBackground(new java.awt.Color(255, 255, 255));
-        lblTitulo.setFont(new java.awt.Font("Segoe UI Emoji", 1, 18)); // NOI18N
-        lblTitulo.setForeground(new java.awt.Color(0, 0, 0));
-        lblTitulo.setText("Resta de dos n�meros");
-        lblTitulo.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        lblTitulo.setFont(new java.awt.Font("Stencil", 3, 14)); // NOI18N
+        lblTitulo.setForeground(new java.awt.Color(204, 102, 255));
+        lblTitulo.setText("Resta de dos números");
 
-        lblNum2.setFont(new java.awt.Font("Segoe UI Emoji", 1, 12)); // NOI18N
+        lblNum2.setFont(new java.awt.Font("Stencil", 3, 12)); // NOI18N
         lblNum2.setForeground(new java.awt.Color(51, 0, 0));
         lblNum2.setText("Numero 2:");
 
-        lblNum1.setFont(new java.awt.Font("Segoe UI Emoji", 1, 12)); // NOI18N
+        lblNum1.setFont(new java.awt.Font("Stencil", 3, 12)); // NOI18N
         lblNum1.setForeground(new java.awt.Color(51, 0, 0));
         lblNum1.setText("Numero 1:");
 
@@ -71,7 +68,8 @@ public class Resta extends javax.swing.JFrame {
             }
         });
 
-        btnRestar.setBackground(new java.awt.Color(0, 153, 102));
+        btnRestar.setBackground(new java.awt.Color(255, 51, 51));
+        btnRestar.setFont(new java.awt.Font("Stencil", 3, 12)); // NOI18N
         btnRestar.setForeground(new java.awt.Color(255, 255, 255));
         btnRestar.setText("Restar");
         btnRestar.addActionListener(new java.awt.event.ActionListener() {
@@ -93,7 +91,7 @@ public class Resta extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(txtNum1, javax.swing.GroupLayout.DEFAULT_SIZE, 147, Short.MAX_VALUE)
                     .addComponent(txtNum2))
-                .addContainerGap(99, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -117,7 +115,7 @@ public class Resta extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(lblNum2)
                     .addComponent(txtNum2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 37, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 41, Short.MAX_VALUE)
                 .addComponent(btnRestar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(28, 28, 28))
         );
@@ -146,12 +144,12 @@ public class Resta extends javax.swing.JFrame {
             double num2 = Double.parseDouble(txtNum2.getText());
             if (num1 >= num2) {
                 double res = num1 - num2;
-                JOptionPane.showMessageDialog(rootPane, "La resta de los dos números es: " + res);
+                JOptionPane.showMessageDialog(rootPane, "Su respuesta es: " + res);
             } else {
-                JOptionPane.showMessageDialog(rootPane, "El primer número debe ser mayor que el segundo número.", "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(rootPane, "Debe ingresar el numero mayor aqui.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(rootPane, "Por favor, ingrese números válidos en ambos campos.", "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(rootPane, "Ingrese los valores correctos.", "Error", JOptionPane.ERROR_MESSAGE);
         }
         txtNum1.setText("");
         txtNum2.setText("");
